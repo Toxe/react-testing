@@ -2,12 +2,6 @@
 
 An example React testing app.
 
-## Dependencies
-
-- react-dropzone
-- axios
-- styled-components
-
 ## Running the application
 
 ```
