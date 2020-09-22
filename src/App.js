@@ -1,10 +1,10 @@
 import React from "react";
-import SimpleFunction from "./SimpleFunction/SimpleFunction";
+import SimpleJest from "./SimpleJest/SimpleJest";
 
 export default function App() {
     return (
         <div>
-            <SimpleFunction />
+            <SimpleJest />
         </div>
     );
 }
