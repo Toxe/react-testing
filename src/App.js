@@ -1,10 +1,10 @@
 import React from "react";
-import SimpleJest from "./Tests/SimpleJest/SimpleJest";
+import JestFunctionTest from "./Tests/JestFunctionTest/JestFunctionTest";
 
 export default function App() {
     return (
         <div>
-            <SimpleJest />
+            <JestFunctionTest />
         </div>
     );
 }
