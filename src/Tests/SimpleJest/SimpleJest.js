@@ -1,5 +1,5 @@
 import React from "react";
-import { formatDistance } from "./formatDistance";
+import { formatDistance } from "../../utils/formatDistance";
 
 export default function SimpleJest() {
     return (

@@ -1,4 +1,4 @@
-import { formatDistance } from "../formatDistance";
+import { formatDistance } from "../../../utils/formatDistance";
 
 test("less than 1km", () => {
     expect(formatDistance(100)).toBe("0.10 km");
