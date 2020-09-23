@@ -50,7 +50,7 @@ export default function DistanceConverter() {
                             onChange={changeDistance}
                         />
                     </Label>
-                    <Button type="submit" onClick={handleClick}>
+                    <Button type="submit" onClick={handleClick} disabled={distance === ""}>
                         Convert
                     </Button>
                 </div>
