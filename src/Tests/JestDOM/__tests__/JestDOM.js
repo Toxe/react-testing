@@ -12,6 +12,6 @@ it("renders", () => {
 
     getByText("jest-dom");
     getByText("Distance Converter");
-    getByLabelText("Please enter a distance in meters:");
+    expect(getByLabelText("Please enter a distance in meters:")).toHaveValue("");
     expect(getByText("Convert")).toBeDisabled();
 });
