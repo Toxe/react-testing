@@ -1,13 +1,13 @@
 import React from "react";
+import TestContainer from "../../Components/TestContainer";
 import DistanceConverter from "../../Components/DistanceConverter";
 import Counter from "../../Components/Counter";
 
 export default function JestDOM() {
     return (
-        <div>
-            <h1>jest-dom</h1>
+        <TestContainer title="jest-dom">
             <DistanceConverter />
             <Counter />
-        </div>
+        </TestContainer>
     );
 }

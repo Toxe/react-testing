@@ -1,13 +1,13 @@
 import React from "react";
+import TestContainer from "../../Components/TestContainer";
 import DistanceConverter from "../../Components/DistanceConverter";
 import Counter from "../../Components/Counter";
 
 export default function DOMTestingLibrary() {
     return (
-        <div>
-            <h1>DOM Testing Library</h1>
+        <TestContainer title="DOM Testing Library">
             <DistanceConverter />
             <Counter />
-        </div>
+        </TestContainer>
     );
 }

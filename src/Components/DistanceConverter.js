@@ -1,23 +1,16 @@
 import React, { useState } from "react";
 import styled from "styled-components";
+import TestComponent from "./TestComponent";
 import { formatDistance } from "../utils/formatDistance";
 
-const StyledDistanceConverter = styled.div`
-    padding: 10px;
-    background-color: beige;
-`;
-const Title = styled.h2`
-    margin-top: 0px;
-    margin-bottom: 5px;
-`;
-const Label = styled.label``;
 const Span = styled.span`
     margin-right: 0.5em;
 `;
-const TextField = styled.input``;
+
 const Button = styled.button`
     margin-left: 1em;
 `;
+
 const Result = styled.div`
     font-weight: bold;
 `;
@@ -36,26 +29,23 @@ export default function DistanceConverter() {
     };
 
     return (
-        <StyledDistanceConverter>
-            <Title>Distance Converter</Title>
+        <TestComponent title="Distance Converter" color="moccasin">
             <form>
-                <div>
-                    <Label>
-                        <Span>Please enter a distance in meters:</Span>
-                        <TextField
-                            type="text"
-                            name="distance"
-                            placeholder="distance"
-                            value={distance}
-                            onChange={changeDistance}
-                        />
-                    </Label>
-                    <Button type="submit" onClick={handleClick} disabled={distance === ""}>
-                        Convert
-                    </Button>
-                </div>
+                <label>
+                    <Span>Please enter a distance in meters:</Span>
+                    <input
+                        type="text"
+                        name="distance"
+                        placeholder="distance"
+                        value={distance}
+                        onChange={changeDistance}
+                    />
+                </label>
+                <Button type="submit" onClick={handleClick} disabled={distance === ""}>
+                    Convert
+                </Button>
                 {result && <Result>Result: {result}</Result>}
             </form>
-        </StyledDistanceConverter>
+        </TestComponent>
     );
 }
