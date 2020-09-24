@@ -14,4 +14,9 @@ it("renders", () => {
     getByText("Distance Converter");
     expect(getByLabelText("Please enter a distance in meters:")).toHaveValue("");
     expect(getByText("Convert")).toBeDisabled();
+
+    getByText("Counter");
+    getByText("-");
+    getByText("+");
+    getByText("5");
 });

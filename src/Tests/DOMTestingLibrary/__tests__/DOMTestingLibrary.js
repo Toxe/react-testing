@@ -13,4 +13,9 @@ it("renders", () => {
     getByText("Distance Converter");
     getByLabelText("Please enter a distance in meters:");
     getByText("Convert");
+
+    getByText("Counter");
+    getByText("-");
+    getByText("+");
+    getByText("5");
 });
