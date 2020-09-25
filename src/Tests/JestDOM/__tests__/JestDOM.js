@@ -10,13 +10,13 @@ it("renders", () => {
 
     const { getByText, getByRole } = getQueriesForElement(root);
 
-    getByRole("heading", {name: "jest-dom"});
-    getByRole("heading", {name: "Distance Converter"});
-    expect(getByRole("textbox", {name: "Please enter a distance in meters:"})).toHaveValue("");
-    expect(getByRole("button", {name: "Convert"})).toBeDisabled();
+    getByRole("heading", { name: "jest-dom" });
+    getByRole("heading", { name: "Distance Converter" });
+    expect(getByRole("textbox", { name: "Please enter a distance in meters:" })).toHaveValue("");
+    expect(getByRole("button", { name: "Convert" })).toBeDisabled();
 
-    getByRole("heading", {name: "Counter"});
-    getByRole("button", {name: "-"});
-    getByRole("button", {name: "+"});
+    getByRole("heading", { name: "Counter" });
+    getByRole("button", { name: "-" });
+    getByRole("button", { name: "+" });
     getByText("5");
 });
