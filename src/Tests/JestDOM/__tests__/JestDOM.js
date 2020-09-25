@@ -2,6 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import { getQueriesForElement } from "@testing-library/dom";
 import "@testing-library/jest-dom";
+import "jest-extended";
 import JestDOM from "../JestDOM";
 
 it("renders", () => {

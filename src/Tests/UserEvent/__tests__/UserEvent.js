@@ -1,8 +1,9 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import { getQueriesForElement } from "@testing-library/dom";
-import "@testing-library/jest-dom";
 import userEvent from "@testing-library/user-event";
+import "@testing-library/jest-dom";
+import "jest-extended";
 import UserEvent from "../UserEvent";
 
 test("enter text", async () => {
