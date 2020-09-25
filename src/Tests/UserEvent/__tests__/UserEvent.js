@@ -1,9 +1,9 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import UserEvent from "../UserEvent";
 import { getQueriesForElement } from "@testing-library/dom";
 import "@testing-library/jest-dom";
 import userEvent from "@testing-library/user-event";
+import UserEvent from "../UserEvent";
 
 test("enter text", async () => {
     const root = document.createElement("div");

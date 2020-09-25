@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import DOMTestingLibrary from "../DOMTestingLibrary";
 import { getQueriesForElement } from "@testing-library/dom";
+import DOMTestingLibrary from "../DOMTestingLibrary";
 
 it("renders", () => {
     const root = document.createElement("div");
