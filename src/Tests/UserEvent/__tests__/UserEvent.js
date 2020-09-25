@@ -11,7 +11,7 @@ test("enter text", async () => {
 
     const { getByRole } = getQueriesForElement(root);
 
-    userEvent.type(getByRole("textbox", {name: "Please enter a distance in meters:"}), "1234");
+    userEvent.type(getByRole("textbox", { name: "Please enter a distance in meters:" }), "1234");
 });
 
 test("click button", async () => {
@@ -20,5 +20,5 @@ test("click button", async () => {
 
     const { getByRole } = getQueriesForElement(root);
 
-    userEvent.click(getByRole("button", {name: "+"}));
+    userEvent.click(getByRole("button", { name: "+" }));
 });
