@@ -9,13 +9,13 @@ it("renders", () => {
 
     const { getByText, getByRole } = getQueriesForElement(root);
 
-    getByRole("heading", {name: "DOM Testing Library"});
-    getByRole("heading", {name: "Distance Converter"});
-    getByRole("textbox", {name: "Please enter a distance in meters:"});
-    getByRole("button", {name: "Convert"});
+    getByRole("heading", { name: "DOM Testing Library" });
+    getByRole("heading", { name: "Distance Converter" });
+    getByRole("textbox", { name: "Please enter a distance in meters:" });
+    getByRole("button", { name: "Convert" });
 
-    getByRole("heading", {name: "Counter"});
-    getByRole("button", {name: "-"});
-    getByRole("button", {name: "+"});
+    getByRole("heading", { name: "Counter" });
+    getByRole("button", { name: "-" });
+    getByRole("button", { name: "+" });
     getByText("5");
 });
