@@ -1,0 +1,24 @@
+import React from "react";
+import ReactDOM from "react-dom";
+import UserEvent from "../UserEvent";
+import { getQueriesForElement } from "@testing-library/dom";
+import "@testing-library/jest-dom";
+import userEvent from "@testing-library/user-event";
+
+test("enter text", async () => {
+    const root = document.createElement("div");
+    ReactDOM.render(<UserEvent />, root);
+
+    const { getByRole } = getQueriesForElement(root);
+
+    userEvent.type(getByRole("textbox", {name: "Please enter a distance in meters:"}), "1234");
+});
+
+test("click button", async () => {
+    const root = document.createElement("div");
+    ReactDOM.render(<UserEvent />, root);
+
+    const { getByRole } = getQueriesForElement(root);
+
+    userEvent.click(getByRole("button", {name: "+"}));
+});
