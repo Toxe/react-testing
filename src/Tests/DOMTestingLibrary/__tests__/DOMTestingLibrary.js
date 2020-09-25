@@ -7,15 +7,15 @@ it("renders", () => {
     const root = document.createElement("div");
     ReactDOM.render(<DOMTestingLibrary />, root);
 
-    const { getByText, getByLabelText } = getQueriesForElement(root);
+    const { getByText, getByRole } = getQueriesForElement(root);
 
-    getByText("DOM Testing Library");
-    getByText("Distance Converter");
-    getByLabelText("Please enter a distance in meters:");
-    getByText("Convert");
+    getByRole("heading", {name: "DOM Testing Library"});
+    getByRole("heading", {name: "Distance Converter"});
+    getByRole("textbox", {name: "Please enter a distance in meters:"});
+    getByRole("button", {name: "Convert"});
 
-    getByText("Counter");
-    getByText("-");
-    getByText("+");
+    getByRole("heading", {name: "Counter"});
+    getByRole("button", {name: "-"});
+    getByRole("button", {name: "+"});
     getByText("5");
 });

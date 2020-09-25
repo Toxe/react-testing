@@ -8,15 +8,15 @@ it("renders", () => {
     const root = document.createElement("div");
     ReactDOM.render(<JestDOM />, root);
 
-    const { getByText, getByLabelText } = getQueriesForElement(root);
+    const { getByText, getByRole } = getQueriesForElement(root);
 
-    getByText("jest-dom");
-    getByText("Distance Converter");
-    expect(getByLabelText("Please enter a distance in meters:")).toHaveValue("");
-    expect(getByText("Convert")).toBeDisabled();
+    getByRole("heading", {name: "jest-dom"});
+    getByRole("heading", {name: "Distance Converter"});
+    expect(getByRole("textbox", {name: "Please enter a distance in meters:"})).toHaveValue("");
+    expect(getByRole("button", {name: "Convert"})).toBeDisabled();
 
-    getByText("Counter");
-    getByText("-");
-    getByText("+");
+    getByRole("heading", {name: "Counter"});
+    getByRole("button", {name: "-"});
+    getByRole("button", {name: "+"});
     getByText("5");
 });
