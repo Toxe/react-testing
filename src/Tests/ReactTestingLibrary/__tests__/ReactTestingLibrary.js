@@ -20,4 +20,9 @@ it("renders", () => {
     getByRole("button", { name: "-" });
     getByRole("button", { name: "+" });
     getByText("5");
+
+    // CallRestApi
+    getByRole("heading", { name: "Call REST API" });
+    getByRole("button", { name: "Call API" });
+    getByRole("textbox", { name: "Current user:" });
 });

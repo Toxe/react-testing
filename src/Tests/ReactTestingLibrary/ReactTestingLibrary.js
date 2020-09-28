@@ -9,7 +9,8 @@ export default function ReactTestingLibrary() {
     return (
         <TestContainer title="React Testing Library">
             <TestDescription>
-                <li>add APIs for working with React components</li>
+                <li>check existence of components after events</li>
+                <li>mock Axios</li>
             </TestDescription>
             <DistanceConverter />
             <Counter />
