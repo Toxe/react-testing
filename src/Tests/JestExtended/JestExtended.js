@@ -1,13 +1,13 @@
 import React from "react";
 import TestContainer from "../../Components/TestContainer";
-import TestComponent from "../../Components/TestComponent";
-import { formatDistance } from "../../utils/formatDistance";
+import TestDescription from "../../Components/TestDescription";
 
 export default function JestExtended() {
     return (
         <TestContainer title="Jest Extended">
-            <TestComponent color="palegreen">100m = {formatDistance(100)}</TestComponent>
-            <TestComponent color="palegreen">1234m = {formatDistance(1234)}</TestComponent>
+            <TestDescription>
+                <li>additional matchers</li>
+            </TestDescription>
         </TestContainer>
     );
 }
