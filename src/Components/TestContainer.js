@@ -13,6 +13,7 @@ const Title = styled.h1`
 
 const Flexbox = styled.div`
     display: flex;
+    flex-wrap: wrap;
 `;
 
 export default function TestContainer({ title, children }) {
