@@ -2,6 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import { getQueriesForElement } from "@testing-library/dom";
 import "jest-extended";
+import "expect-more-jest";
 import DOMTestingLibrary from "../DOMTestingLibrary";
 
 it("renders", () => {

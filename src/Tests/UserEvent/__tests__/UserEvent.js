@@ -4,6 +4,7 @@ import { getQueriesForElement } from "@testing-library/dom";
 import userEvent from "@testing-library/user-event";
 import "@testing-library/jest-dom";
 import "jest-extended";
+import "expect-more-jest";
 import UserEvent from "../UserEvent";
 
 test("enter text", async () => {
