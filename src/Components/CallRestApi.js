@@ -16,8 +16,8 @@ export default function CallRestApi() {
 
     const onClick = async () => {
         const userId = 1 + Math.floor(Math.random() * 10);
-        const user = await axios.get(`https://jsonplaceholder.typicode.com/users/${userId}`);
-        setUsername(user.data.name);
+        const result = await axios.get(`https://jsonplaceholder.typicode.com/users/${userId}`);
+        setUsername(result.data.name);
     };
 
     return (
