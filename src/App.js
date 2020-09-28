@@ -5,6 +5,7 @@ import ExpectMoreJest from "./Tests/ExpectMoreJest/ExpectMoreJest";
 import DOMTestingLibrary from "./Tests/DOMTestingLibrary/DOMTestingLibrary";
 import JestDOM from "./Tests/JestDOM/JestDOM";
 import UserEvent from "./Tests/UserEvent/UserEvent";
+import ReactTestingLibrary from "./Tests/ReactTestingLibrary/ReactTestingLibrary";
 
 export default function App() {
     return (
@@ -15,6 +16,7 @@ export default function App() {
             <DOMTestingLibrary />
             <JestDOM />
             <UserEvent />
+            <ReactTestingLibrary />
         </div>
     );
 }
