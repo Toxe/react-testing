@@ -3,6 +3,7 @@ import TestContainer from "../../Components/TestContainer";
 import TestDescription from "../../Components/TestDescription";
 import DistanceConverter from "../../Components/DistanceConverter";
 import Counter from "../../Components/Counter";
+import CallRestApi from "../../Components/CallRestApi";
 
 export default function ReactTestingLibrary() {
     return (
@@ -12,6 +13,7 @@ export default function ReactTestingLibrary() {
             </TestDescription>
             <DistanceConverter />
             <Counter />
+            <CallRestApi />
         </TestContainer>
     );
 }
