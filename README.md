@@ -8,9 +8,8 @@ An example React testing app.
 npm start
 ```
 
-### Building and running a production version
+### Run tests
 
 ```
-npm run build
-serve -s build
+npm test
 ```
