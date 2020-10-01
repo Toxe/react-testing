@@ -10,7 +10,7 @@ import ReactTestingLibrary from "../ReactTestingLibrary";
 jest.mock("axios");
 
 test("CallRestApi makes API call on button click", async () => {
-    axiosMock.get.mockReturnValue({ data: { name: "Mock Username" } });
+    axiosMock.get.mockResolvedValue({ data: { name: "Mock Username" } });
 
     const { getByRole } = render(<ReactTestingLibrary />);
 
