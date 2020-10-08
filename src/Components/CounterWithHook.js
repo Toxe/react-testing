@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import TestComponent from "./TestComponent";
-import useCounterWithHook from "./useCounterWithHook";
+import { useCounterWithHook } from "./useCounterWithHook";
 
 const Button = styled.button`
     margin-right: 10px;

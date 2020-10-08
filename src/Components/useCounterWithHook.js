@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-export default function useCounterWithHook() {
+export function useCounterWithHook() {
     const [counter, setCounter] = useState(50);
 
     const incCounter = () => setCounter(counter + 5);
