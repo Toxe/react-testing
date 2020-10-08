@@ -1,6 +1,6 @@
 import React from "react";
 import { render } from "@testing-library/react";
-import userEvent from "@testing-library/user-event";
+// import userEvent from "@testing-library/user-event";
 import "@testing-library/jest-dom";
 import "jest-extended";
 import "expect-more-jest";
@@ -20,6 +20,12 @@ it("renders", () => {
     getByRole("button", { name: "-" });
     getByRole("button", { name: "+" });
     getByText("5");
+
+    // CounterWithHook
+    getByRole("heading", { name: "CounterWithHook" });
+    getByRole("button", { name: "-5" });
+    getByRole("button", { name: "+5" });
+    getByText("50");
 
     // CallRestApi
     getByRole("heading", { name: "Call REST API" });
