@@ -8,22 +8,20 @@ import * as hooks from "../../../Components/useCounterWithHook";
 import CounterWithHook from "../../../Components/CounterWithHook";
 
 test("useCounterWithHook", async () => {
-    const incCounterSpy = jest.fn();
-    const decCounterSpy = jest.fn();
+    const incCounter = jest.fn();
+    const decCounter = jest.fn();
 
     const hookSpy = jest.spyOn(hooks, "useCounterWithHook");
-    hookSpy.mockReturnValue({ counter: 25, incCounter: incCounterSpy, decCounter: decCounterSpy });
+    hookSpy.mockReturnValue({ counter: 25, incCounter, decCounter });
 
     const { getByRole, getByText } = render(<CounterWithHook />);
 
     getByRole("heading", { name: "CounterWithHook" });
-    const decButton = getByRole("button", { name: "-5" });
-    const incButton = getByRole("button", { name: "+5" });
     getByText("25");
 
-    userEvent.click(incButton);
-    userEvent.click(decButton);
+    userEvent.click(getByRole("button", { name: "+5" }));
+    userEvent.click(getByRole("button", { name: "-5" }));
 
-    expect(incCounterSpy).toHaveBeenCalledTimes(1);
-    expect(decCounterSpy).toHaveBeenCalledTimes(1);
+    expect(incCounter).toHaveBeenCalledTimes(1);
+    expect(decCounter).toHaveBeenCalledTimes(1);
 });
